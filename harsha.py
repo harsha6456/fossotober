@@ -1,4 +1,26 @@
-print("HARSHA")
-print("AM.EN.U4AIE19066")
-print("S1 AIE")
-hi
+# Python program to check if the input number is prime or not
+
+num = 407
+
+# take input from the user
+# num = int(input("Enter a number: "))
+
+# prime numbers are greater than 1
+
+if num > 1:
+  
+   # check for factors
+    
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num," not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"a prime number")
+       
+# if input number is less than
+# or equal to 1, it is not prime
+else:
+   print(num,"This not a prime number")
+    print (num,"go and learn math")
